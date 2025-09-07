@@ -1,0 +1,91 @@
+body {
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F7FA;
+    margin: 0;
+}
+
+.calculater {
+    background: #FFFFFF;
+    width: 340px;
+    padding: 2rem 1.5rem;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 1.1rem;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 10px;
+    background: #898787;
+    color: #ffffff;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.form-group button {
+    flex: 1;
+    padding: 0.9rem 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: #0045da76;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s, transform 0.1s;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.form-group button:hover {
+    background: #fefefe00;
+    color: #ffcc00;
+    transform: translateY(-2px) scale(1.04);
+}
+
+.form-group button:active {
+    background: #a8a8a9;
+    color: #fff;
+}
+
+
+.form-group:last-child button:last-child {
+    background: #ffe066;
+    color: #293040;
+    font-weight: bold;
+    transition: background 0.18s, color 0.18s, transform 0.1s;
+}
+
+.form-group:last-child button:last-child:hover {
+    background: #afafaf00;
+    color: #181a20;
+}
+
+.form-group button:nth-child(4),
+.form-group button[operator] {
+    background: #fffffff3;
+    color: #000000;
+    font-weight: bold;
+}
+
+.form-group button:nth-child(4):hover,
+.form-group button[operator]:hover {
+    background: #edededfc;
+    color: #000000;
+}
